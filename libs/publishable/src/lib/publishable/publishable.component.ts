@@ -2,9 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { of } from 'rxjs';
 
-import { ToLearn } from '@acardigital/interfaces';
-
-
 @Component({
   selector: 'acardigital-publishable',
   templateUrl: './publishable.component.html',
@@ -27,4 +24,9 @@ export class PublishableComponent implements OnInit {
   ngOnInit() {
   }
 
+}
+
+interface ToLearn {
+  title: string;
+  learned: boolean;
 }

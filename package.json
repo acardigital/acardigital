@@ -42,7 +42,8 @@
     "update:check": "ng update",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "build:lib": "ng build publishable && cd dist/libs/publishable && npm pack"
   },
   "private": true,
   "dependencies": {
