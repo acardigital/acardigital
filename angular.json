@@ -119,6 +119,44 @@
           }
         }
       }
+    },
+    "publishable": {
+      "projectType": "library",
+      "root": "libs/publishable",
+      "sourceRoot": "libs/publishable/src",
+      "prefix": "acardigital",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/publishable/tsconfig.lib.json",
+            "project": "libs/publishable/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/publishable/tsconfig.lib.json",
+              "libs/publishable/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/publishable/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/publishable/jest.config.js",
+            "tsConfig": "libs/publishable/tsconfig.spec.json",
+            "setupFile": "libs/publishable/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {
