@@ -1,6 +1,23 @@
 {
   "name": "@acardigital/publishable",
   "version": "0.0.1",
+  "author": "Furkan ACAR (https://github.com/futuredayv)",
+  "license": "MIT",
+  "keywords": [
+    "ng",
+    "nx",
+    "narwhal",
+    "angular",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acardigital/acardigital.git"
+  },
+  "bugs": {
+    "email": "overlord@acar.digital",
+    "url": "https://github.com/acardigital/acardigital/issues"
+  },
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0"

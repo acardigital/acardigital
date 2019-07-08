@@ -16,6 +16,9 @@
     },
     "publishable": {
       "tags": []
+    },
+    "interfaces": {
+      "tags": []
     }
   }
 }

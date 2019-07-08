@@ -1,0 +1,16 @@
+
+<h1>What do we don't know?</h1>
+
+<div
+  class="to-learn"
+  *ngFor="let t of (toLearn$ | async)"
+  [class.learned]="t.learned">
+
+  <input
+    type="check"
+    [checked]="t.learned"
+    (change)="t.learned = !t.learned">
+
+  {{t.title}}
+
+</div>

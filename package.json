@@ -1,7 +1,25 @@
 {
   "name": "acardigital",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": "Furkan ACAR (https://github.com/futuredayv)",
   "license": "MIT",
+  "keywords": [
+    "ng",
+    "angular",
+    "nx",
+    "narwhal",
+    "monorepo",
+    "ui",
+    "modular"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acardigital/acardigital.git"
+  },
+  "bugs": {
+    "email": "overlord@acar.digital",
+    "url": "https://github.com/acardigital/acardigital/issues"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
