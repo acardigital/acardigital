@@ -1,0 +1,18 @@
+{
+  "npmScope": "acardigital",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "acardigital-e2e": {
+      "tags": []
+    },
+    "acardigital": {
+      "tags": []
+    }
+  }
+}
